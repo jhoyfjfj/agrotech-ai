@@ -53,4 +53,4 @@ await characteristic.writeValue(new TextEncoder().encode(cmd));
 }
 
 
-connectBtn.onclick = connectBluetooth;
+connectBtn.onclick = connectBluetooth; 

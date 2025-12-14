@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>AgroTech AI – Smart Farming</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="topbar">
+<h1>🌱 AgroTech AI</h1>
+<button id="connectBtn">Scan Devices</button>
+<span id="status" class="disconnected">Disconnected</span>
+</header>
+
+
+<section class="grid">
+<div class="card temp">🌡 Temp: <span id="temp">--</span>°C</div>
+<div class="card hum">💧 Humidity: <span id="hum">--</span>%</div>
+<div class="card soil">🌱 Soil: <span id="soil">--</span>%</div>
+<div class="card light">☀ Light: <span id="light">--</span>%</div>
+<div class="card tds">⚡ TDS: <span id="tds">--</span> ppm</div>
+</section>
+
+
+<section class="controls">
+<button onclick="sendCmd('PUMP_ON')">Pump ON</button>
+<button onclick="sendCmd('PUMP_OFF')">Pump OFF</button>
+<button onclick="sendCmd('LIGHT_ON')">Light ON</button>
+<button onclick="sendCmd('LIGHT_OFF')">Light OFF</button>
+</section>
+
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -13,7 +13,8 @@ return;
 
 
 device = await navigator.bluetooth.requestDevice({
-filters: [{ services: [SERVICE_UUID] }]
+  acceptAllDevices: true,
+  optionalServices: [SERVICE_UUID]
 });
 
 
